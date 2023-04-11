@@ -1,0 +1,8 @@
+# DESCRIPTION: Verilator output: Timestamp data for --skip-identical.  Delete at will.
+C "--xml-only seven.v"
+S   4799512  5115048  1663401737 "/usr/local/bin/verilator_bin"
+T      8068 65319253  1678096673 "obj_dir/Vseven.xml"
+T       126 65317524  1678096673 "obj_dir/Vseven__ver.d"
+T         0        0  1678096673 "obj_dir/Vseven__verFiles.dat"
+S      1697 65319258  1678096575 "seven.v"
+S       467 65317523  1678096312 "slow_clock.v"

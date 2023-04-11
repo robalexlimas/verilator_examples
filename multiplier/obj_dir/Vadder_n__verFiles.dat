@@ -1,0 +1,8 @@
+# DESCRIPTION: Verilator output: Timestamp data for --skip-identical.  Delete at will.
+C "--xml-only adder_n.v"
+S   4799512  5115048  1663401737 "/usr/local/bin/verilator_bin"
+S       173 65319255  1678113382 "adder.v"
+S       624 65319259  1678117153 "adder_n.v"
+T     12215 65319709  1678117425 "obj_dir/Vadder_n.xml"
+T       127 65319690  1678117425 "obj_dir/Vadder_n__ver.d"
+T         0        0  1678117425 "obj_dir/Vadder_n__verFiles.dat"

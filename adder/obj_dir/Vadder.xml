@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- DESCRIPTION: Verilator output: XML representation of netlist -->
+<verilator_xml>
+	<files>
+		<file id="a" filename="AstRoot" language="1800-2012" />
+		<file id="b" filename="COMMAND_LINE" language="1800-2012" />
+		<file id="c" filename="INTERNAL_VERILATOR_DEFINE" language="1800-2012" />
+		<file id="d" filename="adder.v" language="1800-2012" />
+	</files>
+	<netlist>
+		<module fl="d1" name="adder">
+			<var fl="d2" name="a" />
+			<var fl="d2" name="b" />
+			<var fl="d2" name="cin" />
+			<var fl="d3" name="sum" />
+			<var fl="d3" name="cout" />
+			<contAssign fl="d5">
+				<xor fl="d5">
+					<xor fl="d5">
+						<varref fl="d5" name="a" />
+						<varref fl="d5" name="b" />
+					</xor>
+					<varref fl="d5" name="cin" />
+				</xor>
+				<varref fl="d5" name="sum" />
+			</contAssign>
+			<contAssign fl="d6">
+				<or fl="d6">
+					<or fl="d6">
+						<and fl="d6">
+							<varref fl="d6" name="a" />
+							<varref fl="d6" name="b" />
+						</and>
+						<and fl="d6">
+							<varref fl="d6" name="b" />
+							<varref fl="d6" name="cin" />
+						</and>
+					</or>
+					<and fl="d6">
+						<varref fl="d6" name="cin" />
+						<varref fl="d6" name="a" />
+					</and>
+				</or>
+				<varref fl="d6" name="cout" />
+			</contAssign>
+		</module>
+		<typetable fl="a0">
+			<basicDType fl="d2" name="logic" />
+		</typetable>
+	</netlist>
+</verilator_xml>

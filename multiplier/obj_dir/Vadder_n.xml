@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<!-- DESCRIPTION: Verilator output: XML representation of netlist -->
+<verilator_xml>
+	<files>
+		<file id="a" filename="AstRoot" language="1800-2012" />
+		<file id="b" filename="COMMAND_LINE" language="1800-2012" />
+		<file id="c" filename="INTERNAL_VERILATOR_DEFINE" language="1800-2012" />
+		<file id="e" filename="adder.v" language="1800-2012" />
+		<file id="d" filename="adder_n.v" language="1800-2012" />
+	</files>
+	<netlist>
+		<module fl="d4" name="adder_n" topModule="1">
+			<var fl="d5" name="a" />
+			<var fl="d6" name="b" />
+			<var fl="d7" name="cin" />
+			<var fl="d8" name="sum" />
+			<var fl="d9" name="cout" />
+			<var fl="d11" name="cout_wire" />
+			<contAssign fl="d13">
+				<varref fl="d13" name="cin" />
+				<sel fl="d13">
+					<varref fl="d13" name="cout_wire" />
+					<const fl="d13" name="4'h0" />
+					<const fl="d13" name="32'h1" />
+				</sel>
+			</contAssign>
+			<contAssign fl="d14">
+				<sel fl="d14">
+					<varref fl="d14" name="cout_wire" />
+					<const fl="d14" name="4'h8" />
+					<const fl="d14" name="32'h1" />
+				</sel>
+				<varref fl="d14" name="cout" />
+			</contAssign>
+			<var fl="d16" name="i" />
+			<begin fl="d18" name="genblk1" />
+			<begin fl="d19" name="genblk1[0]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h0" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h0" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h0" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h0" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h1" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[1]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h1" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h1" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h1" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h1" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h2" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[2]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h2" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h2" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h2" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h2" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h3" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[3]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h3" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h3" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h3" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h3" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h4" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[4]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h4" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h4" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h4" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h4" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h5" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[5]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h5" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h5" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h5" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h5" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h6" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[6]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h6" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h6" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h6" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h6" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h7" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+			<begin fl="d19" name="genblk1[7]">
+				<instance fl="d19" name="full_adder" defName="adder">
+					<port fl="d20" name="a" direction="in" portIndex="1">
+						<sel fl="d20">
+							<varref fl="d20" name="a" />
+							<const fl="d18" name="3'h7" />
+							<const fl="d20" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d21" name="b" direction="in" portIndex="2">
+						<sel fl="d21">
+							<varref fl="d21" name="b" />
+							<const fl="d18" name="3'h7" />
+							<const fl="d21" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d22" name="cin" direction="in" portIndex="3">
+						<sel fl="d22">
+							<varref fl="d22" name="cout_wire" />
+							<const fl="d18" name="4'h7" />
+							<const fl="d22" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d23" name="sum" direction="out" portIndex="4">
+						<sel fl="d23">
+							<varref fl="d23" name="sum" />
+							<const fl="d18" name="3'h7" />
+							<const fl="d23" name="32'h1" />
+						</sel>
+					</port>
+					<port fl="d24" name="cout" direction="out" portIndex="5">
+						<sel fl="d24">
+							<varref fl="d24" name="cout_wire" />
+							<const fl="d24" name="4'h8" />
+							<const fl="d24" name="32'h1" />
+						</sel>
+					</port>
+				</instance>
+			</begin>
+		</module>
+		<module fl="e1" name="adder">
+			<var fl="e2" name="a" />
+			<var fl="e2" name="b" />
+			<var fl="e2" name="cin" />
+			<var fl="e3" name="sum" />
+			<var fl="e3" name="cout" />
+			<contAssign fl="e5">
+				<xor fl="e5">
+					<xor fl="e5">
+						<varref fl="e5" name="a" />
+						<varref fl="e5" name="b" />
+					</xor>
+					<varref fl="e5" name="cin" />
+				</xor>
+				<varref fl="e5" name="sum" />
+			</contAssign>
+			<contAssign fl="e6">
+				<or fl="e6">
+					<or fl="e6">
+						<and fl="e6">
+							<varref fl="e6" name="a" />
+							<varref fl="e6" name="b" />
+						</and>
+						<and fl="e6">
+							<varref fl="e6" name="b" />
+							<varref fl="e6" name="cin" />
+						</and>
+					</or>
+					<and fl="e6">
+						<varref fl="e6" name="cin" />
+						<varref fl="e6" name="a" />
+					</and>
+				</or>
+				<varref fl="e6" name="cout" />
+			</contAssign>
+		</module>
+		<typetable fl="a0">
+			<basicDType fl="d18" name="logic" />
+			<basicDType fl="d16" name="integer" left="31" right="0" />
+			<basicDType fl="d5" name="logic" left="7" right="0" />
+			<basicDType fl="d11" name="logic" left="8" right="0" />
+			<basicDType fl="d13" name="logic" left="3" right="0" />
+			<basicDType fl="d20" name="logic" left="2" right="0" />
+			<basicDType fl="d4" name="logic" left="31" right="0" />
+			<basicDType fl="d13" name="logic" left="31" right="0" />
+		</typetable>
+	</netlist>
+</verilator_xml>

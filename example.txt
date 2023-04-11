@@ -1,0 +1,10 @@
+For adder folder
+
+Include --trace in order to create waveforms
+cd adder
+verilator -Wall --trace --cc adder.v --exe adder.cpp
+This command create the obj_dir folder
+make -j -C obj_dir -f Vadder.mk Vadder
+Now run input
+./obj_dir/Vadder
+This creates the waveform file

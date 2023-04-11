@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<!-- DESCRIPTION: Verilator output: XML representation of netlist -->
+<verilator_xml>
+	<files>
+		<file id="a" filename="AstRoot" language="1800-2012" />
+		<file id="b" filename="COMMAND_LINE" language="1800-2012" />
+		<file id="c" filename="INTERNAL_VERILATOR_DEFINE" language="1800-2012" />
+		<file id="d" filename="seven.v" language="1800-2012" />
+		<file id="e" filename="slow_clock.v" language="1800-2012" />
+	</files>
+	<netlist>
+		<module fl="d3" name="seven" topModule="1">
+			<var fl="d5" name="SW" />
+			<var fl="d6" name="CLK" />
+			<var fl="d7" name="SSEG_CA" />
+			<var fl="d8" name="SSEG_AN" />
+			<var fl="d9" name="LED" />
+			<var fl="d11" name="Clk_Slow" />
+			<instance fl="d13" name="S1" defName="slow_clock">
+				<port fl="d13" name="__pinNumber1" direction="in" portIndex="1">
+					<varref fl="d13" name="CLK" />
+				</port>
+				<port fl="d13" name="__pinNumber2" direction="out" portIndex="2">
+					<varref fl="d13" name="Clk_Slow" />
+				</port>
+			</instance>
+			<initial fl="d14">
+				<begin fl="d14">
+					<assign fl="d15">
+						<const fl="d15" name="8'hfe" />
+						<varref fl="d15" name="SSEG_AN" />
+					</assign>
+				</begin>
+			</initial>
+			<always fl="d18">
+				<sentree fl="d18">
+					<senitem fl="d18">
+						<varref fl="d18" name="Clk_Slow" />
+					</senitem>
+				</sentree>
+				<begin fl="d19">
+					<case fl="d20">
+						<varref fl="d20" name="SW" />
+						<caseitem fl="d21">
+							<const fl="d21" name="4'h0" />
+							<assigndly fl="d21">
+								<const fl="d21" name="8'hc0" />
+								<varref fl="d21" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d22">
+							<const fl="d22" name="4'h1" />
+							<assigndly fl="d22">
+								<const fl="d22" name="8'hf9" />
+								<varref fl="d22" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d23">
+							<const fl="d23" name="4'h2" />
+							<assigndly fl="d23">
+								<const fl="d23" name="8'ha4" />
+								<varref fl="d23" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d24">
+							<const fl="d24" name="4'h3" />
+							<assigndly fl="d24">
+								<const fl="d24" name="8'hb0" />
+								<varref fl="d24" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d25">
+							<const fl="d25" name="4'h4" />
+							<assigndly fl="d25">
+								<const fl="d25" name="8'h99" />
+								<varref fl="d25" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d26">
+							<const fl="d26" name="4'h5" />
+							<assigndly fl="d26">
+								<const fl="d26" name="8'h92" />
+								<varref fl="d26" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d27">
+							<const fl="d27" name="4'h6" />
+							<assigndly fl="d27">
+								<const fl="d27" name="8'h82" />
+								<varref fl="d27" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d28">
+							<const fl="d28" name="4'h7" />
+							<assigndly fl="d28">
+								<const fl="d28" name="8'hd8" />
+								<varref fl="d28" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d29">
+							<const fl="d29" name="4'h8" />
+							<assigndly fl="d29">
+								<const fl="d29" name="8'h80" />
+								<varref fl="d29" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d30">
+							<const fl="d30" name="4'ha" />
+							<assigndly fl="d30">
+								<const fl="d30" name="8'h88" />
+								<varref fl="d30" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d31">
+							<const fl="d31" name="4'hb" />
+							<assigndly fl="d31">
+								<const fl="d31" name="8'h83" />
+								<varref fl="d31" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d32">
+							<const fl="d32" name="4'hc" />
+							<assigndly fl="d32">
+								<const fl="d32" name="8'hc6" />
+								<varref fl="d32" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d33">
+							<const fl="d33" name="4'hd" />
+							<assigndly fl="d33">
+								<const fl="d33" name="8'ha1" />
+								<varref fl="d33" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d34">
+							<const fl="d34" name="4'he" />
+							<assigndly fl="d34">
+								<const fl="d34" name="8'h86" />
+								<varref fl="d34" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d35">
+							<const fl="d35" name="4'hf" />
+							<assigndly fl="d35">
+								<const fl="d35" name="8'h8e" />
+								<varref fl="d35" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d36">
+							<assigndly fl="d36">
+								<const fl="d36" name="8'h0" />
+								<varref fl="d36" name="SSEG_CA" />
+							</assigndly>
+						</caseitem>
+					</case>
+					<assigndly fl="d39">
+						<varref fl="d39" name="SW" />
+						<varref fl="d39" name="LED" />
+					</assigndly>
+					<case fl="d41">
+						<varref fl="d41" name="SSEG_AN" />
+						<caseitem fl="d42">
+							<const fl="d42" name="8'hfe" />
+							<assigndly fl="d42">
+								<const fl="d42" name="8'hfd" />
+								<varref fl="d42" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d43">
+							<const fl="d43" name="8'hfd" />
+							<assigndly fl="d43">
+								<const fl="d43" name="8'hfb" />
+								<varref fl="d43" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d44">
+							<const fl="d44" name="8'hfb" />
+							<assigndly fl="d44">
+								<const fl="d44" name="8'hf7" />
+								<varref fl="d44" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d45">
+							<const fl="d45" name="8'hf7" />
+							<assigndly fl="d45">
+								<const fl="d45" name="8'hef" />
+								<varref fl="d45" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d46">
+							<const fl="d46" name="8'hef" />
+							<assigndly fl="d46">
+								<const fl="d46" name="8'hdf" />
+								<varref fl="d46" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d47">
+							<const fl="d47" name="8'hdf" />
+							<assigndly fl="d47">
+								<const fl="d47" name="8'hbf" />
+								<varref fl="d47" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d48">
+							<const fl="d48" name="8'hbf" />
+							<assigndly fl="d48">
+								<const fl="d48" name="8'h7f" />
+								<varref fl="d48" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d49">
+							<const fl="d49" name="8'h7f" />
+							<assigndly fl="d49">
+								<const fl="d49" name="8'hfe" />
+								<varref fl="d49" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+						<caseitem fl="d50">
+							<assigndly fl="d50">
+								<const fl="d50" name="8'h0" />
+								<varref fl="d50" name="SSEG_AN" />
+							</assigndly>
+						</caseitem>
+					</case>
+				</begin>
+			</always>
+		</module>
+		<module fl="e1" name="slow_clock">
+			<var fl="e2" name="CLK" />
+			<var fl="e3" name="Clk_Slow" />
+			<var fl="e5" name="counter_out" />
+			<initial fl="e8">
+				<begin fl="e8">
+					<assign fl="e9">
+						<const fl="e9" name="32'h0" />
+						<varref fl="e9" name="counter_out" />
+					</assign>
+					<assign fl="e10">
+						<const fl="e10" name="1'h0" />
+						<varref fl="e10" name="Clk_Slow" />
+					</assign>
+				</begin>
+			</initial>
+			<always fl="e15">
+				<sentree fl="e15">
+					<senitem fl="e15">
+						<varref fl="e15" name="CLK" />
+					</senitem>
+				</sentree>
+				<begin fl="e15">
+					<assigndly fl="e16">
+						<add fl="e16">
+							<const fl="e16" name="32'h1" />
+							<varref fl="e16" name="counter_out" />
+						</add>
+						<varref fl="e16" name="counter_out" />
+					</assigndly>
+					<if fl="e17">
+						<lt fl="e17">
+							<const fl="e17" name="32'hf5e100" />
+							<varref fl="e17" name="counter_out" />
+						</lt>
+						<begin fl="e17">
+							<assigndly fl="e18">
+								<const fl="e18" name="32'h0" />
+								<varref fl="e18" name="counter_out" />
+							</assigndly>
+							<assigndly fl="e19">
+								<not fl="e19">
+									<varref fl="e19" name="Clk_Slow" />
+								</not>
+								<varref fl="e19" name="Clk_Slow" />
+							</assigndly>
+						</begin>
+					</if>
+				</begin>
+			</always>
+		</module>
+		<typetable fl="a0">
+			<basicDType fl="e17" name="logic" />
+			<basicDType fl="e5" name="logic" left="31" right="0" />
+			<basicDType fl="d5" name="logic" left="3" right="0" />
+			<basicDType fl="d7" name="logic" left="7" right="0" />
+			<basicDType fl="e17" name="logic" />
+		</typetable>
+	</netlist>
+</verilator_xml>
